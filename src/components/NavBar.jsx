@@ -13,7 +13,10 @@ export default function NavBar() {
 
   return (
     <div className="navbar">
-      <p>Welcome back, {myContext.user}!</p>
+      <div>
+        <p className='p-username'>Welcome back,</p>
+        <span className='span-username' >{myContext.user}</span>!
+      </div>
       <div className="menu-icon" onClick={toggleMenu}>
         <div className='hamburger'>
           <span></span>
@@ -22,16 +25,18 @@ export default function NavBar() {
         </div>
       </div>
       {showMenu && (
-        <div className="navbar-links">
-          <Link to={'/favorites'} onClick={toggleMenu}>
-            Favorites
-          </Link>
-          <Link to={'/profile'} onClick={toggleMenu}>
-            Profile
-          </Link>
-          <Link to={'/'} onClick={toggleMenu}>
-            Logout
-          </Link>
+        <div className="modal-overlay" onClick={toggleMenu}>
+          <div className="modal-content">
+            <Link to={'/favorites'} onClick={toggleMenu}>
+              Favorites
+            </Link>
+            <Link to={'/profile'} onClick={toggleMenu}>
+              Profile
+            </Link>
+            <Link to={'/'} onClick={toggleMenu}>
+              Logout
+            </Link>
+          </div>
         </div>
       )}
     </div>
