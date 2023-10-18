@@ -1,0 +1,126 @@
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  height: 100%;
+  color: white;
+}
+
+.ajustes-finais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.ajustes-finais form {
+  display: flex;
+  align-items: center;
+}
+
+.ajustes-finais input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.ajustes-finais button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background-color: #13C585;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ajustes-finais button:hover {
+  background-color: #13C585;
+  transition: background-color 0.3s;
+}
+
+
+.card {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13rem;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  position: relative;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.text {
+  margin-top: 1rem;
+  line-height: 1;
+}
+
+.text h2 {
+  font-size: 1.2rem;
+}
+
+.text p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.play-icon {
+  position: absolute;
+  top: 45%;
+  right: 12%;
+  transform: translateY(10px);
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.card:hover .play-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  background-color: #222;
+}
+
+.circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgb(50, 233, 50);
+  display: grid;
+  place-items: center;
+  transform: scale(0.95)
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 18px solid black;
+  transform: rotate(90deg);
+  margin-left: 0.2rem;
+}
+
+.play-icon:hover .circle {
+  cursor: auto;
+  transform: scale(1);
+}
