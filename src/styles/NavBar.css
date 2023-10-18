@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: whitesmoke;
+  display: block;
+  height: 3px;
+  margin-bottom: 5px;
+  transition: transform 0.2s, opacity 0.2s;
+  width: 30px;
+}
+
+
+.menu-icon {
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.navbar-links a:last-child {
+  margin-bottom: 0;
+}
