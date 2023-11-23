@@ -1,0 +1,24 @@
+.music-card {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.music-card:hover {
+  background-color: #222;
+}
+
+.music-card h4 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.music-card audio {
+  width: 100%;
+  margin-top: 1rem;
+}

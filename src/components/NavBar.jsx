@@ -27,14 +27,14 @@ export default function NavBar() {
       {showMenu && (
         <div className="modal-overlay" onClick={toggleMenu}>
           <div className="modal-content">
-            <Link to={'/favorites'} onClick={toggleMenu}>
-              Favorites
-            </Link>
-            <Link to={'/profile'} onClick={toggleMenu}>
-              Profile
+            <Link to={'/dashboard'} onClick={toggleMenu}>
+              Voltar
             </Link>
             <Link to={'/'} onClick={toggleMenu}>
               Logout
+            </Link>
+            <Link to={'/about'} >
+              About
             </Link>
           </div>
         </div>

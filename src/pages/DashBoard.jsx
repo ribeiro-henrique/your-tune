@@ -3,6 +3,7 @@ import { useState } from 'react';
 import '../styles/DashBoard.css';
 import photo from '../assets/img-music2.jpg';
 import Loading from "../components/Loading";
+import { Link } from "react-router-dom";
 
 export default function DashBoard() {
   const [busca, setBusca] = useState('');
@@ -46,24 +47,29 @@ export default function DashBoard() {
         <div className="album-container">
           {
             result.length > 0 ? result.map((e) => (
+              
               <div key={e.collectionId} className="card">
-                <div className="img-holder">
-                  <img
-                    src={e.artworkUrl100.replaceAll('100x100bb', '200x200bb')}
-                    alt={e.collectionName}
-                  />
-                </div>
+                  <div className="img-holder">
+                    <img
+                      src={e.artworkUrl100.replaceAll('100x100bb', '200x200bb')}
+                      alt={e.collectionName}
+                    />
+                  </div>
+                
                 <div className="text">
                   <h2>{e.collectionName}</h2>
                   <p>{e.primaryGenreName}</p>
                   <p>{e.copyright}</p>
                 </div>
-                <div className="play-icon">
-                  <div className="circle">
-                    <div className="triangle"></div>
+                  <Link to={ `/album/${e.collectionId}` }>
+                  <div className="play-icon">
+                    <div className="circle">
+                      <div className="triangle"></div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
+              
             )) : 
             <div>
               <img src={photo} alt="" />

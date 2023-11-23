@@ -4,6 +4,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { MyProvider } from './context/Context.jsx'
 import DashBoard from './pages/DashBoard.jsx'
+import Album from './pages/Album.jsx'
+import About from './pages/About.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +15,14 @@ const routes = createBrowserRouter([
   {
     path: '/dashboard',
     element: <DashBoard />,
+  },
+  {
+    path: '/album/:id',
+    element: <Album />,
+  },
+  {
+    path: '/about',
+    element: <About />,
   }
 ])
 
