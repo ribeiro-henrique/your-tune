@@ -25,7 +25,7 @@ Bem-vindo ao Your Tune Music! 🎵 Este é um projeto criado com React, onde exp
 
 ## Responsividade
 
-O My Music App foi projetado com responsividade em mente, proporcionando uma experiência de usuário agradável em dispositivos móveis. A interface se ajusta dinamicamente para fornecer uma navegação intuitiva e visualização otimizada em telas de tamanhos variados.
+O Your Tune Music foi projetado com responsividade em mente, proporcionando uma experiência de usuário agradável em dispositivos móveis. A interface se ajusta dinamicamente para fornecer uma navegação intuitiva e visualização otimizada em telas de tamanhos variados.
 
 ![playerpc](https://user-images.githubusercontent.com/111824151/285083497-eb893825-85fb-4eb9-b4b7-8cf8725d47bd.png)
 ![playerpc](https://user-images.githubusercontent.com/111824151/285083758-a0fa7246-2eb3-4cfd-8a62-472561641bc3.png)
