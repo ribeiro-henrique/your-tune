@@ -1,6 +1,6 @@
-# My Music App
+# Your Tune App
 
-Bem-vindo ao My Music App! 🎵 Este é um projeto criado com React, onde explorei intensivamente o uso de CSS para estilização e a componentização de elementos para criar uma experiência envolvente.
+Bem-vindo ao Your Tune Music! 🎵 Este é um projeto criado com React, onde explorei intensivamente o uso de CSS para estilização e a componentização de elementos para criar uma experiência envolvente.
 
 ## Tecnologias Utilizadas
 
